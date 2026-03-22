@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A1 Auto Spa — Professional auto detailing serving the GTA. Mobile or in-shop, we restore your vehicle to showroom condition." />
+  <title>A1 Auto Spa | Professional Auto Detailing — GTA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">
+        <img src="A1autoLogo.png" alt="A1 Auto Spa" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-nav">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary mobile-link">Book Now</a></li>
+    </ul>
+  </div>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <!--
+      TODO: Replace the background-image URL below with a real high-quality hero photo.
+      A dark shot of a freshly detailed car works best (BMW, Mercedes, etc.).
+      Recommended size: 1600×900px minimum.
+    -->
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600705722908-bde25c93bbd5?w=1600&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Professional Auto Detailing — Serving the GTA</span>
+      <h1>Your Car Deserves<br>to Look Its Best.</h1>
+      <p class="hero-sub">
+        Professional detailing at our shop, at your home, or wherever works for you.
+        We restore your vehicle to showroom condition — on your schedule.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Book Now</a>
+        <a href="#services" class="btn btn-ghost btn-lg">View Packages</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5&#9733;</span>
+          <span class="stat-label">Google Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Satisfaction Guaranteed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">GTA</span>
+          <span class="stat-label">Mobile & In-Shop</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES & PRICING ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Offer</span>
+        <h2>Detailing Packages</h2>
+        <p>Available at our shop, at your home, or on-site — wherever is most convenient for you.</p>
+      </div>
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="card-icon" aria-hidden="true">✦</div>
+          <h3>Exterior Shine</h3>
+          <!-- TODO: Adjust price as needed -->
+          <p class="card-price">$89</p>
+          <ul class="card-features">
+            <li>Hand wash &amp; hand dry</li>
+            <li>Wheel &amp; tire deep clean</li>
+            <li>Tire dressing applied</li>
+            <li>Exterior glass cleaning</li>
+            <li>Door jamb wipe-down</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-gold">Book This</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon" aria-hidden="true">✦</div>
+          <h3>Interior Refresh</h3>
+          <!-- TODO: Adjust price as needed -->
+          <p class="card-price">$99</p>
+          <ul class="card-features">
+            <li>Full interior vacuum</li>
+            <li>Dashboard &amp; console cleaning</li>
+            <li>Door panel wipe-down</li>
+            <li>Interior glass cleaning</li>
+            <li>Premium air freshener</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-gold">Book This</a>
+        </article>
+
+        <article class="service-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="card-icon" aria-hidden="true">✦</div>
+          <h3>Full Detail</h3>
+          <!-- TODO: Adjust price as needed -->
+          <p class="card-price">$179</p>
+          <ul class="card-features">
+            <li>Everything in Exterior Shine</li>
+            <li>Everything in Interior Refresh</li>
+            <li>Clay bar treatment</li>
+            <li>Paint protection wax</li>
+            <li>Leather conditioning</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Book This</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon" aria-hidden="true">✦</div>
+          <h3>Premium Package</h3>
+          <!-- TODO: Adjust price as needed -->
+          <p class="card-price">$299</p>
+          <ul class="card-features">
+            <li>Everything in Full Detail</li>
+            <li>Machine polish (paint correction)</li>
+            <li>Paint decontamination</li>
+            <li>Ceramic spray coating</li>
+            <li>Engine bay cleaning</li>
+            <li>Odor elimination treatment</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-gold">Book This</a>
+        </article>
+
+      </div>
+      <div class="service-locations">
+        <span class="location-pill">&#127968; In-Shop Detailing</span>
+        <span class="location-pill">&#128663; Mobile — We Come to You</span>
+        <span class="location-pill">&#127968; At Your Home or Office</span>
+      </div>
+
+      <!-- TODO: Update vehicle size surcharge amounts if different -->
+      <p class="services-note">
+        Base prices only — final cost varies by vehicle size &amp; condition.<br>
+        All prices are subject to change upon inspection. <a href="#contact">Contact us</a> for a quote.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== BEFORE & AFTER GALLERY ===== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2>Before &amp; After</h2>
+        <p>Drag the slider to reveal the transformation.</p>
+      </div>
+      <div class="gallery-grid">
+
+        <!--
+          TODO: For each comparison slider, replace the src attributes:
+            - after-img src → your "after" photo (color, detailed car)
+            - before-img src → your "before" photo (dirty/dull car, same angle)
+          Ideal photo size: 800×500px. Same crop/angle for both makes the effect powerful.
+        -->
+
+        <div class="comparison-slider">
+          <img class="after-img" src="https://picsum.photos/seed/a1spa-after1/800/500" alt="After: exterior detail" loading="lazy" />
+          <div class="before-wrap">
+            <img class="before-img" src="https://picsum.photos/seed/a1spa-before1/800/500?grayscale" alt="Before: exterior detail" loading="lazy" />
+          </div>
+          <div class="slider-divider">
+            <div class="slider-handle" aria-label="Drag to compare">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <span class="img-label before-label">Before</span>
+          <span class="img-label after-label">After</span>
+        </div>
+
+        <div class="comparison-slider">
+          <img class="after-img" src="https://picsum.photos/seed/a1spa-after2/800/500" alt="After: interior detail" loading="lazy" />
+          <div class="before-wrap">
+            <img class="before-img" src="https://picsum.photos/seed/a1spa-before2/800/500?grayscale" alt="Before: interior detail" loading="lazy" />
+          </div>
+          <div class="slider-divider">
+            <div class="slider-handle" aria-label="Drag to compare">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <span class="img-label before-label">Before</span>
+          <span class="img-label after-label">After</span>
+        </div>
+
+        <div class="comparison-slider">
+          <img class="after-img" src="https://picsum.photos/seed/a1spa-after3/800/500" alt="After: full detail" loading="lazy" />
+          <div class="before-wrap">
+            <img class="before-img" src="https://picsum.photos/seed/a1spa-before3/800/500?grayscale" alt="Before: full detail" loading="lazy" />
+          </div>
+          <div class="slider-divider">
+            <div class="slider-handle" aria-label="Drag to compare">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <span class="img-label before-label">Before</span>
+          <span class="img-label after-label">After</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / BOOKING ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <span class="section-label">Get In Touch</span>
+          <h2>Book Your Detail</h2>
+          <p>
+            Fill out the form and we'll confirm your appointment within 24 hours.
+            Come visit us at our shop, or let us come to you — your choice.
+            Proudly serving the GTA and surrounding areas.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">&#128222;</div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+12495941313">(249) 594-1313</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">&#9993;</div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:info.a1autospa@gmail.com">info.a1autospa@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">&#127968;</div>
+              <div>
+                <strong>Our Shop</strong>
+                <!-- TODO: Add your shop address here -->
+                <p>Brampton, Ontario</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">&#128205;</div>
+              <div>
+                <strong>Mobile Service Area</strong>
+                <p>Brampton, Mississauga, Caledon<br>&amp; across the GTA</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">&#128336;</div>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon – Sun: 8:00am – 8:30pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <!--
+            TODO: Set up a free account at https://formspree.io
+            Then replace YOUR_FORM_ID below with your actual form ID.
+            It will look like: https://formspree.io/f/xpzgwkqr
+          -->
+          <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="(905) 555-0100" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Package <span class="required">*</span></label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="exterior-shine">Exterior Shine — $89</option>
+                <option value="interior-refresh">Interior Refresh — $99</option>
+                <option value="full-detail">Full Detail — $179</option>
+                <option value="premium-package">Premium Package — $299</option>
+                <option value="custom">Custom / Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Calendar Date + Time Picker -->
+            <div class="form-group">
+              <label>Preferred Date &amp; Time <span class="required">*</span></label>
+              <div class="cal-picker" id="calPicker">
+                <div class="cal-header">
+                  <button type="button" class="cal-nav" id="calPrev">&#8249;</button>
+                  <span id="calMonthLabel" class="cal-month-label"></span>
+                  <button type="button" class="cal-nav" id="calNext">&#8250;</button>
+                </div>
+                <div class="cal-weekdays">
+                  <span>Su</span><span>Mo</span><span>Tu</span>
+                  <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="cal-grid" id="calGrid"></div>
+                <div class="cal-times" id="calTimes"></div>
+              </div>
+              <!-- Hidden inputs submitted with form -->
+              <input type="hidden" id="date" name="preferred_date" required />
+              <input type="hidden" id="preferred_time" name="preferred_time" />
+              <p class="cal-selected" id="calSelectedLabel"></p>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" name="message" rows="3" placeholder="Vehicle make &amp; model, special requests, your address, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg">
+              Send Booking Request
+            </button>
+            <p class="form-note">We'll confirm your appointment within 24 hours.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo">
+        <img src="A1autoLogo.png" alt="A1 Auto Spa" class="logo-img logo-img--footer" />
+      </a>
+      <p class="footer-tagline">Professional auto detailing — mobile &amp; in-shop, serving the GTA.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Book Now</a>
+        <!--
+          TODO: Add real social media links below.
+          Example: <a href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">Instagram</a>
+        -->
+      </nav>
+      <!-- TODO: Update copyright year or make it dynamic -->
+      <p class="footer-copy">&copy; 2024 A1 Auto Spa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
