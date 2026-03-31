@@ -924,7 +924,7 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   .hamburger    { display: flex; }
 
   .hero-bg {
-    background-position: 20% center;
+    background-position: 70% center;
     background-size: cover;
   }
 
@@ -936,11 +936,12 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
 
   .hero-actions {
     flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
   .hero-actions .btn {
-    width: 100%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 260px;
   }
 
   .hero-stats {
