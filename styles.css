@@ -351,7 +351,7 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 20%;
   background-repeat: no-repeat;
   transform: scale(1.06);
   transition: transform 10s ease;
