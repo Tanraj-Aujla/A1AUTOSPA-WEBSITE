@@ -351,11 +351,11 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 20%;
+  background-position: center 60%;
   background-repeat: no-repeat;
   transform: scale(1.06);
   transition: transform 10s ease;
-  filter: brightness(0.6);
+  filter: brightness(0.45);
 }
 .hero-bg.loaded { transform: scale(1); }
 
@@ -924,7 +924,7 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   .hamburger    { display: flex; }
 
   .hero-bg {
-    background-position: left center;
+    background-position: 20% center;
     background-size: cover;
   }
 
