@@ -924,8 +924,8 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   .hamburger    { display: flex; }
 
   .hero-bg {
-    background-position: center center;
-    background-size: 200%;
+    background-position: left center;
+    background-size: cover;
   }
 
   h1 { font-size: 2.2rem; }
