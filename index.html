@@ -172,22 +172,17 @@
     <div class="container">
       <div class="section-header">
         <span class="section-label">Our Work</span>
-        <h2>Before &amp; After</h2>
-        <p>Drag the slider to reveal the transformation.</p>
+        <h2>Our Results</h2>
+        <p>Drag the sliders to see the transformation — or browse our finished work below.</p>
       </div>
-      <div class="gallery-grid">
 
-        <!--
-          TODO: For each comparison slider, replace the src attributes:
-            - after-img src → your "after" photo (color, detailed car)
-            - before-img src → your "before" photo (dirty/dull car, same angle)
-          Ideal photo size: 800×500px. Same crop/angle for both makes the effect powerful.
-        -->
+      <!-- Before & After Sliders -->
+      <div class="gallery-grid gallery-sliders">
 
         <div class="comparison-slider">
-          <img class="after-img" src="https://picsum.photos/seed/a1spa-after1/800/500" alt="After: exterior detail" loading="lazy" />
+          <img class="after-img" src="after 2.JPG" alt="After: detail" loading="lazy" />
           <div class="before-wrap">
-            <img class="before-img" src="https://picsum.photos/seed/a1spa-before1/800/500?grayscale" alt="Before: exterior detail" loading="lazy" />
+            <img class="before-img" src="before 2.JPG" alt="Before: detail" loading="lazy" />
           </div>
           <div class="slider-divider">
             <div class="slider-handle" aria-label="Drag to compare">
@@ -201,9 +196,9 @@
         </div>
 
         <div class="comparison-slider">
-          <img class="after-img" src="https://picsum.photos/seed/a1spa-after2/800/500" alt="After: interior detail" loading="lazy" />
+          <img class="after-img" src="after 3.JPG" alt="After: detail" loading="lazy" />
           <div class="before-wrap">
-            <img class="before-img" src="https://picsum.photos/seed/a1spa-before2/800/500?grayscale" alt="Before: interior detail" loading="lazy" />
+            <img class="before-img" src="before 3.JPG" alt="Before: detail" loading="lazy" />
           </div>
           <div class="slider-divider">
             <div class="slider-handle" aria-label="Drag to compare">
@@ -216,22 +211,21 @@
           <span class="img-label after-label">After</span>
         </div>
 
-        <div class="comparison-slider">
-          <img class="after-img" src="https://picsum.photos/seed/a1spa-after3/800/500" alt="After: full detail" loading="lazy" />
-          <div class="before-wrap">
-            <img class="before-img" src="https://picsum.photos/seed/a1spa-before3/800/500?grayscale" alt="Before: full detail" loading="lazy" />
-          </div>
-          <div class="slider-divider">
-            <div class="slider-handle" aria-label="Drag to compare">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <span class="img-label before-label">Before</span>
-          <span class="img-label after-label">After</span>
-        </div>
+      </div>
 
+      <!-- Clean Shots -->
+      <div class="gallery-grid gallery-clean">
+        <div class="clean-photo">
+          <img src="C43 Black Deatailed.jpg" alt="Detailed C43 AMG" loading="lazy" />
+        </div>
+        <!-- TODO: Replace src with your clean photo -->
+        <div class="clean-photo clean-photo--placeholder">
+          <img src="After-1.JPG" alt="Clean detail shot" loading="lazy" />
+        </div>
+        <!-- TODO: Replace src with your clean photo -->
+        <div class="clean-photo clean-photo--placeholder">
+          <span class="placeholder-text">Photo Coming Soon</span>
+        </div>
       </div>
     </div>
   </section>

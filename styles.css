@@ -577,8 +577,46 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+
+.gallery-sliders {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 860px;
+  margin: 0 auto 40px;
+}
+
+.gallery-clean {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.clean-photo {
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  transition: box-shadow var(--transition);
+}
+.clean-photo:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+.clean-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.clean-photo--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .comparison-slider {
@@ -588,7 +626,7 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   cursor: ew-resize;
   user-select: none;
   -webkit-user-select: none;
-  aspect-ratio: 8 / 5;
+  aspect-ratio: 3 / 4;
   background: var(--dark-2);
   border: 1px solid var(--border);
   transition: box-shadow var(--transition);
@@ -899,10 +937,10 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gallery-grid {
+  .gallery-clean {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gallery-grid .comparison-slider:last-child {
+  .gallery-clean .clean-photo:last-child {
     grid-column: span 2;
     max-width: 600px;
     margin: 0 auto;
@@ -956,10 +994,14 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
     margin: 0 auto;
   }
 
-  .gallery-grid {
+  .gallery-sliders {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .gallery-clean {
     grid-template-columns: 1fr;
   }
-  .gallery-grid .comparison-slider:last-child {
+  .gallery-clean .clean-photo:last-child {
     grid-column: span 1;
     max-width: 100%;
   }
